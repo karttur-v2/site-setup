@@ -10,8 +10,8 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>Karttur</title>
-<meta name="description" content="Script your own world.">
+<!-- begin _includes/seo.html --><title>Ruby | Karttur</title>
+<meta name="description" content="Setting up Ruby, creating and customising a Jekyll collections">
 
 
   <meta name="author" content="Thomas Gumbricht">
@@ -21,14 +21,11 @@
 <meta property="og:type" content="website">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Karttur">
-<meta property="og:title" content="Karttur">
-<meta property="og:url" content="http://localhost:4000/">
+<meta property="og:title" content="Ruby">
+<meta property="og:url" content="http://localhost:4000/ruby/">
 
 
-  <meta property="og:description" content="Script your own world.">
-
-
-
+  <meta property="og:description" content="Setting up Ruby, creating and customising a Jekyll collections">
 
 
 
@@ -38,21 +35,13 @@
 
 
 
-<link rel="canonical" href="http://localhost:4000/">
 
 
 
+<link rel="canonical" href="http://localhost:4000/ruby/">
 
 
-  <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Person",
-    "name": "Thomas Gumbricht",
-    "url": "http://localhost:4000/",
-    "sameAs": ["https://github.com/"]
-}
-</script>
+
 
 
 
@@ -89,7 +78,7 @@
 
   </head>
 
-  <body class="layout--home wide" dir="ltr">
+  <body class="layout--collection wide" dir="ltr">
     <nav class="skip-links">
   <ul>
     <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
@@ -320,7 +309,7 @@
           
           <ul>
             
-              <li><a href="/ruby/">Ruby</a></li>
+              <li><a href="/ruby/" class="active">Ruby</a></li>
             
               <li><a href="/jekyllpages/">Intro</a></li>
             
@@ -342,74 +331,16 @@
 
   <div class="archive">
     
-      <h1 id="page-title" class="page__title"></h1>
+      <h1 id="page-title" class="page__title">Ruby</h1>
     
-    <h2 id="how-to-install-homebrew-chruby-ruby-jekyll-and-a-jekyll-theme">How to install Homebrew, Chruby, Ruby, Jekyll and a Jekyll theme</h2>
+    <!-- If there is a title in the front matter it is of cat #, thus start those docs at ## level
+-->
 
-<p>This blog is about setting up an environment for producing static web-pages from <a href="https://www.markdownguide.org">markdown</a> text files and then publish them; with free publication on <a href="https://github.com">GitHub</a> as one alternative. The blog covers the following installations and setups for macOS:</p>
+<p>The Ruby collection is both an example of a <a href="https://jekyllrb.com/docs/collections/">Jekyll collection</a> (a way to create a group of web-pages on a site) and an instruction for how to setup <a href="https://www.ruby-lang.org/en/">Ruby</a> - the programming language in which Jekyll is written and that is used for publishing the Karttur web site.</p>
 
-<ol>
-  <li>Install Ruby,</li>
-  <li>Install Jekyll,</li>
-  <li>Setup a Jekyll theme for static web-pages,</li>
-  <li>Setting up a repo on GitHub, and</li>
-  <li>Deploying a free web-site on GitHub.</li>
-</ol>
+<h2 id="install-ruby">Install Ruby</h2>
 
-<p>The blog uses itself as an example and also introduces different options publishing static web-pages with <a href="https://jekyllrb.com">Jekyll</a> and the Jekyll theme <a href="https://mmistakes.github.io/minimal-mistakes">Minimal Mistakes</a>.</p>
-
-<h3 id="ruby">Ruby</h3>
-
-<p><a href="https://www.ruby-lang.org/en/">Ruby</a> is an open source language were bits and pieces (“packages”) are written and published as “gems”. How to setup Ruby and its gems is covered in the post []</p>
-
-<p><a href="/ruby">Ruby</a> section (a Jekyll <em>collection</em> of web-pages).</p>
-
-<h3 id="jekyll">Jekyll</h3>
-
-<p>This blog introduces <a href="https://jekyllrb.com">Jekyll</a> for building static websites for blogs, portfolios, articles, photos etc. Jekyll takes text files written in <a href="https://www.markdownguide.org/getting-started/">markdown</a> and converts them to web-pages. One great advantage with Jekyll is that <a href="https://github.com">GitHub</a> supports free hosting of Jekyll pages. This in essence means that you can build a website and host it for free using Jekyll and deploying on GitHub.</p>
-
-<h3 id="jekyll-pages-posts-and-collections">Jekyll Pages, Posts and Collections</h3>
-
-<p>In Jekyll, the organisation of published documents included in a site can use one of three scopes: <em>pages</em>, <em>posts</em> and <em>collections</em>. The basic scope behind <em>pages</em>, <em>posts</em> and <em>collections</em> are:</p>
-
-<ul>
-  <li><strong>pages</strong>: for single documents not part of any blog, series or other compilation, but that can be the portal for any such compilation,</li>
-  <li><strong>posts</strong>: a compilation of associated texts where the temporal sequence (date) is regarded (i.e. blog), and</li>
-  <li><strong>collections</strong>: a compilation of associated texts without temporal sequence.</li>
-</ul>
-
-<p>In this blog I have used all three scopes and at the same time tried to make it into a manual for how to setup and publish a website using <a href="https://jekyllrb.com">Jekyll</a>.</p>
-
-<p>Jekyll is written in the programming language <a href="https://www.ruby-lang.org/en/">Ruby</a>. Ruby is an open source language were bits and pieces (“packages”) are written and published as “gems”. How to setup Ruby and its gems is overhauled in the <a href="/websetup/ruby">Ruby collection</a>. How to create different layouts and contents for web sites using Jekyll is the topic of the <a href="/websetup/jekyll/jekyllpages">Introduction Pages</a> and the <a href="/websetup/jekyll/jekyllposts">Jekyll Posts</a>.</p>
-
-<h2 id="jekyll-themes">Jekyll themes</h2>
-
-<p>The community engaged in developing Ruby Gems for Jekyll is extensive and active. This means that there are many gems available for converting <em>markdown</em> text files to web-pages. There are hundreds of different Jekyll <em>themes</em> to choose from - each generate a different layout from the same basic text (with some additional tweaks required). Many of the themes are Open Source, but there are also themes that comes with a fee.</p>
-
-<p><a href="https://pages.github.com/themes/">GitHub officially supports about a dozen or so theme</a>, but you can deploy any theme on GitHub - you might just have to tweak it a bit extra.</p>
-
-<p>The site <a href="https://www.bestjekyllthemes.com">Best Jekyll Themes</a> has collected about 200 of the most popular Jekyll themes. Other galleries with Jekyll themes include:</p>
-
-<ul>
-  <li><a href="https://github.com/topics/jekyll-theme">GitHub.com #jekyll-theme repos</a></li>
-  <li><a href="https://jamstackthemes.dev/ssg/jekyll/">jamstackthemes.dev</a></li>
-  <li><a href="http://jekyllthemes.org">jekyllthemes.org</a></li>
-  <li><a href="https://jekyllthemes.io">jekyllthemes.io</a></li>
-  <li><a href="https://jekyll-themes.com">jekyll-themes.com</a></li>
-</ul>
-
-<h2 id="kartturs-jekyll-setup">Karttur’s Jekyll setup</h2>
-
-<p>This blog is about setting up Karttur’s website using <a href="https://jekyllrb.com">Jekyll</a> and the theme <a href="https://mmistakes.github.io/minimal-mistakes/">Minimal Mistakes</a> by Michael Rose. The blog also covers some tricks and tips and how to customise a theme.</p>
-
-<h2 id="resources">Resources</h2>
-
-
-
-<h3 class="archive__subtitle">Recent posts</h3>
-
-
-
+<p>The collection of Ruby documents include:</p>
 
 <div class="entries-list">
   
@@ -421,43 +352,18 @@
 
 
 <div class="list__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+  <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
     
     <h4 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/websetup/jekyll/jekyll_posts04-layouts-figures/" rel="permalink">Posts in Jekyll: 5. figure
+        <a href="/ruby/ruby-versions/" rel="permalink">Ruby version managers
 </a>
       
     </h4>
     
 
-  <p class="page__meta">
-    
-      
-      <span class="page__meta-date">
-        <i class="far fa-calendar-alt" aria-hidden="true"></i>
-        
-        <time datetime="2024-09-25T17:48:41+02:00">2024-09-25</time>
-      </span>
-    
 
-    <span class="page__meta-sep"></span>
-
-    
-      
-      
-
-      <span class="page__meta-readtime">
-        <i class="far fa-clock" aria-hidden="true"></i>
-        
-          1 minute read
-        
-      </span>
-    
-  </p>
-
-
-    <p class="archive__item-excerpt" itemprop="description">Image header with overlay_color
+    <p class="archive__item-excerpt" itemprop="description">Check out which version of Ruby is used by your system.
 </p>
   </article>
 </div>
@@ -466,43 +372,37 @@
 
 
 <div class="list__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+  <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
     
     <h4 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/websetup/jekyll/jekyll_posts04-csass-extension/" rel="permalink">Posts in Jekyll: sass
+        <a href="/ruby/ruby-Chruby-installation/" rel="permalink">Install Ruby with Chruby
 </a>
       
     </h4>
     
 
-  <p class="page__meta">
+
+    <p class="archive__item-excerpt" itemprop="description">To install and maintain a separate version of Ruby on macOS, you can choose from a range of approaches. I use the package manager Howebrew. Installing Homebr...</p>
+  </article>
+</div>
+
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
     
+    <h4 class="archive__item-title no_toc" itemprop="headline">
       
-      <span class="page__meta-date">
-        <i class="far fa-calendar-alt" aria-hidden="true"></i>
-        
-        <time datetime="2024-09-24T12:13:03+02:00">2024-09-24</time>
-      </span>
-    
-
-    <span class="page__meta-sep"></span>
-
-    
+        <a href="/ruby/ruby-installation/" rel="permalink">Ruby installation
+</a>
       
-      
-
-      <span class="page__meta-readtime">
-        <i class="far fa-clock" aria-hidden="true"></i>
-        
-          1 minute read
-        
-      </span>
+    </h4>
     
-  </p>
 
 
-    <p class="archive__item-excerpt" itemprop="description">sass extention.
+    <p class="archive__item-excerpt" itemprop="description">Install Ruby
 </p>
   </article>
 </div>
@@ -511,43 +411,56 @@
 
 
 <div class="list__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+  <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
     
     <h4 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/websetup/jekyll/jekyll_posts04-code-snippets/" rel="permalink">Posts in Jekyll: 5. Code snippets
+        <a href="/ruby/ruby-update/" rel="permalink">Gem updates
 </a>
       
     </h4>
     
 
-  <p class="page__meta">
+
+    <p class="archive__item-excerpt" itemprop="description">Regardless if you used a Ruby version manager or a bare-bone installation (see previous document), you should keep your Ruby environment and its gems updated...</p>
+  </article>
+</div>
+
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
     
+    <h4 class="archive__item-title no_toc" itemprop="headline">
       
-      <span class="page__meta-date">
-        <i class="far fa-calendar-alt" aria-hidden="true"></i>
-        
-        <time datetime="2024-09-24T12:13:03+02:00">2024-09-24</time>
-      </span>
-    
-
-    <span class="page__meta-sep"></span>
-
-    
+        <a href="/ruby/ruby-collection/" rel="permalink">Ruby collection
+</a>
       
-      
-
-      <span class="page__meta-readtime">
-        <i class="far fa-clock" aria-hidden="true"></i>
-        
-          less than 1 minute read
-        
-      </span>
+    </h4>
     
-  </p>
 
 
-    <p class="archive__item-excerpt" itemprop="description">How to set front matter in Jekyll posts and options for posts layout and content using the theme Minimal mistakes.
+    <p class="archive__item-excerpt" itemprop="description">This introduction on how to install and setup Ruby for Jekyll is written as a Jekyll Collection. In reality that only means that each document is saved insid...</p>
+  </article>
+</div>
+
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
+    
+    <h4 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/ruby/ruby-jekyll-install/" rel="permalink">Install Jekyll
+</a>
+      
+    </h4>
+    
+
+
+    <p class="archive__item-excerpt" itemprop="description">Jekyll
 </p>
   </article>
 </div>
@@ -556,43 +469,18 @@
 
 
 <div class="list__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+  <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
     
     <h4 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/websetup/jekyll/jekyll_posts04-layouts-splash/" rel="permalink">Posts in Jekyll: 4. splash
+        <a href="/ruby/ruby-jekyll-so-simple/" rel="permalink">Jekyll theme Minimal Mistakes
 </a>
       
     </h4>
     
 
-  <p class="page__meta">
-    
-      
-      <span class="page__meta-date">
-        <i class="far fa-calendar-alt" aria-hidden="true"></i>
-        
-        <time datetime="2024-09-23T17:48:41+02:00">2024-09-23</time>
-      </span>
-    
 
-    <span class="page__meta-sep"></span>
-
-    
-      
-      
-
-      <span class="page__meta-readtime">
-        <i class="far fa-clock" aria-hidden="true"></i>
-        
-          less than 1 minute read
-        
-      </span>
-    
-  </p>
-
-
-    <p class="archive__item-excerpt" itemprop="description">The header section of the Splash layout is generated as expected.
+    <p class="archive__item-excerpt" itemprop="description">Jekyll
 </p>
   </article>
 </div>
@@ -601,43 +489,18 @@
 
 
 <div class="list__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+  <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
     
     <h4 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/websetup/jekyll/jekyll_posts03-layouts-intro/" rel="permalink">Posts in Jekyll: 3. layouts
+        <a href="/ruby/ruby-mm-master/" rel="permalink">Jekyll theme Minimal Mistakes as gem
 </a>
       
     </h4>
     
 
-  <p class="page__meta">
-    
-      
-      <span class="page__meta-date">
-        <i class="far fa-calendar-alt" aria-hidden="true"></i>
-        
-        <time datetime="2024-09-22T12:13:03+02:00">2024-09-22</time>
-      </span>
-    
 
-    <span class="page__meta-sep"></span>
-
-    
-      
-      
-
-      <span class="page__meta-readtime">
-        <i class="far fa-clock" aria-hidden="true"></i>
-        
-          3 minute read
-        
-      </span>
-    
-  </p>
-
-
-    <p class="archive__item-excerpt" itemprop="description">Introduction to layout options for the theme Minimal Mistakes.
+    <p class="archive__item-excerpt" itemprop="description">Download zip from the M-M repo
 </p>
   </article>
 </div>
@@ -646,43 +509,18 @@
 
 
 <div class="list__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+  <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
     
     <h4 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/websetup/jekyll/jekyll_posts02-categories/" rel="permalink">Posts in Jekyll: 2. categories
+        <a href="/ruby/ruby-mm-master/" rel="permalink">Jekyll theme Minimal Mistakes as remote theme
 </a>
       
     </h4>
     
 
-  <p class="page__meta">
-    
-      
-      <span class="page__meta-date">
-        <i class="far fa-calendar-alt" aria-hidden="true"></i>
-        
-        <time datetime="2024-09-21T12:13:03+02:00">2024-09-21</time>
-      </span>
-    
 
-    <span class="page__meta-sep"></span>
-
-    
-      
-      
-
-      <span class="page__meta-readtime">
-        <i class="far fa-clock" aria-hidden="true"></i>
-        
-          2 minute read
-        
-      </span>
-    
-  </p>
-
-
-    <p class="archive__item-excerpt" itemprop="description">Front matter options for organising posts in categories, forcing urls and omitting posts.
+    <p class="archive__item-excerpt" itemprop="description">Download zip from the M-M repo
 </p>
   </article>
 </div>
@@ -691,51 +529,270 @@
 
 
 <div class="list__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+  <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
     
     <h4 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/websetup/jekyll/jekyll_posts01-basics/" rel="permalink">Posts in Jekyll: 1. basics
+        <a href="/ruby/ruby-mm-master/" rel="permalink">Jekyll theme Minimal Mistakes
 </a>
       
     </h4>
     
 
-  <p class="page__meta">
-    
-      
-      <span class="page__meta-date">
-        <i class="far fa-calendar-alt" aria-hidden="true"></i>
-        
-        <time datetime="2024-09-20T12:13:03+02:00">2024-09-20</time>
-      </span>
-    
 
-    <span class="page__meta-sep"></span>
-
-    
-      
-      
-
-      <span class="page__meta-readtime">
-        <i class="far fa-clock" aria-hidden="true"></i>
-        
-          2 minute read
-        
-      </span>
-    
-  </p>
-
-
-    <p class="archive__item-excerpt" itemprop="description">How to set front matter in Jekyll posts and basic options for layout and content using the theme Minimal Mistakes.
+    <p class="archive__item-excerpt" itemprop="description">Download zip from the M-M repo
 </p>
   </article>
 </div>
 
 </div>
 
+<h2 id="collections---a-quick-tutorial">Collections - a quick tutorial</h2>
+
+<ol>
+  <li>Create a folder named “underscore”+”collection name” (<em>_&lt;collection-name&gt;</em>),</li>
+  <li>Edit <span class="file">_config.yml</span> to include this collection and its permalink,</li>
+  <li>Create a <em>pages</em> scope for linking to the collection items, set the <em>layout</em> to <em>collection</em>, and <em>collection</em> to <em>_&lt;collection-name&gt;</em></li>
+  <li>add other options in the front matter of the <em>pages</em> scope, including overriding the <span class="file">_config.yml</span> <em>defaults</em>.</li>
+  <li>create the collection documents in the collection folder <em>_&lt;collection-name&gt;</em>, the front matter can be cut down to title only.</li>
+</ol>
+
+<p>For more details read on or visit the <a href="https://jekyllrb.com/docs/collections/">Jekyll document on Collections</a>.</p>
+
+<h2 id="kartturs-collections">Karttur’s collections</h2>
+
+<p>This document is itself of the scope <a href="../jekyll/jekyllpages/">pages</a> type. It is the front page (or root) of the <em>collection</em> called <em>ruby</em>. To end up in the root directory of the <em>ruby</em> collection, the front matter key <em>permalink</em> is set to <em>/ruby/</em>. The complete front matter of this page thus looks like this (for details on how this defines the layout see the <a href="../jekyll/jekyllpages/">pages</a> document in this site):</p>
+
+<div class="language-plaintext no-copy highlighter-rouge"><div class="highlight"><pre class="highlight"><code>layout: collection
+title: "Ruby collection"
+excerpt: Setting up Ruby, creating and customising jekyll collections
+author_profile: true
+permalink: /websetup/ruby/
+collection: ruby
+entries_layout: grid
+classes: wide
+toc: false
+sidebar:
+  nav: "jekylldocs"
+toc: false
+</code></pre></div></div>
+
+<p>The setting above generates a grid layout (<em>entries_layout: grid</em>) from the markdown documents in the collection folder (<em>collection: ruby</em>). You do not need to add any other code.</p>
+
+<h2 id="resources">Resources</h2>
+
+<p><a href="https://jekyllrb.com/docs/collections/">Jekyll collection</a></p>
+
+<p><a href="https://www.ruby-lang.org/en/">Ruby programming language</a></p>
+
+<h2 id="jekyll-collection-content">Jekyll collection content</h2>
 
 
+
+<div class="entries-grid">
+  
+
+
+
+
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h4 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/ruby/ruby-versions/" rel="permalink">Ruby version managers
+</a>
+      
+    </h4>
+    
+
+
+    <p class="archive__item-excerpt" itemprop="description">Check out which version of Ruby is used by your system.
+</p>
+  </article>
+</div>
+
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h4 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/ruby/ruby-Chruby-installation/" rel="permalink">Install Ruby with Chruby
+</a>
+      
+    </h4>
+    
+
+
+    <p class="archive__item-excerpt" itemprop="description">To install and maintain a separate version of Ruby on macOS, you can choose from a range of approaches. I use the package manager Howebrew. Installing Homebr...</p>
+  </article>
+</div>
+
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h4 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/ruby/ruby-installation/" rel="permalink">Ruby installation
+</a>
+      
+    </h4>
+    
+
+
+    <p class="archive__item-excerpt" itemprop="description">Install Ruby
+</p>
+  </article>
+</div>
+
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h4 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/ruby/ruby-update/" rel="permalink">Gem updates
+</a>
+      
+    </h4>
+    
+
+
+    <p class="archive__item-excerpt" itemprop="description">Regardless if you used a Ruby version manager or a bare-bone installation (see previous document), you should keep your Ruby environment and its gems updated...</p>
+  </article>
+</div>
+
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h4 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/ruby/ruby-collection/" rel="permalink">Ruby collection
+</a>
+      
+    </h4>
+    
+
+
+    <p class="archive__item-excerpt" itemprop="description">This introduction on how to install and setup Ruby for Jekyll is written as a Jekyll Collection. In reality that only means that each document is saved insid...</p>
+  </article>
+</div>
+
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h4 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/ruby/ruby-jekyll-install/" rel="permalink">Install Jekyll
+</a>
+      
+    </h4>
+    
+
+
+    <p class="archive__item-excerpt" itemprop="description">Jekyll
+</p>
+  </article>
+</div>
+
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h4 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/ruby/ruby-jekyll-so-simple/" rel="permalink">Jekyll theme Minimal Mistakes
+</a>
+      
+    </h4>
+    
+
+
+    <p class="archive__item-excerpt" itemprop="description">Jekyll
+</p>
+  </article>
+</div>
+
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h4 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/ruby/ruby-mm-master/" rel="permalink">Jekyll theme Minimal Mistakes as gem
+</a>
+      
+    </h4>
+    
+
+
+    <p class="archive__item-excerpt" itemprop="description">Download zip from the M-M repo
+</p>
+  </article>
+</div>
+
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h4 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/ruby/ruby-mm-master/" rel="permalink">Jekyll theme Minimal Mistakes as remote theme
+</a>
+      
+    </h4>
+    
+
+
+    <p class="archive__item-excerpt" itemprop="description">Download zip from the M-M repo
+</p>
+  </article>
+</div>
+
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h4 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/ruby/ruby-mm-master/" rel="permalink">Jekyll theme Minimal Mistakes
+</a>
+      
+    </h4>
+    
+
+
+    <p class="archive__item-excerpt" itemprop="description">Download zip from the M-M repo
+</p>
+  </article>
+</div>
+
+</div>
 
   </div>
 </div>

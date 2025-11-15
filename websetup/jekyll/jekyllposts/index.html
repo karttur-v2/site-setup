@@ -1,0 +1,593 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.26.2 by Michael Rose
+  Copyright 2013-2024 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+
+<html lang="en-US" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Jekyll posts | Karttur</title>
+<meta name="description" content="Script your own world.">
+
+
+  <meta name="author" content="Thomas Gumbricht">
+  
+
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Karttur">
+<meta property="og:title" content="Jekyll posts">
+<meta property="og:url" content="http://localhost:4000/websetup/jekyll/jekyllposts/">
+
+
+  <meta property="og:description" content="Script your own world.">
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="canonical" href="http://localhost:4000/websetup/jekyll/jekyllposts/">
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Karttur Feed">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+  window.enable_copy_code_button = true;
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single" dir="ltr">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+          <a class="site-logo" href="/"><img src="/assets/images/site-logo.png" alt="Karttur"></a>
+        
+        <a class="site-title" href="/">
+          Karttur
+          <span class="site-subtitle">v2.0</span>
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a
+                href="/ruby/"
+                
+                
+              >Ruby</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/jekyll/jekyllpages/"
+                 title="jekyll pages as part of your site"
+                
+              >Intro Pages</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/jekyll/jekyllposts/"
+                 title="jekyll posts as part of your site"
+                
+              >Jekyll</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/github/"
+                 title="Publishing your Jekyll theme on GitHub"
+                
+              >GitHub Collection</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/"
+                 title="Websetup root"
+                
+              >Front</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/about/"
+                 title="about Karttur"
+                
+              >About</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/"
+                 title="Karttur.com home"
+                
+              >Home</a>
+            </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <i class="fas fa-search"></i>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person" class="h-card">
+
+  
+    <div class="author__avatar">
+      <a href="http://localhost:4000/">
+        <img src="/assets/images/biophoto_tg_1.png" alt="Thomas Gumbricht" itemprop="image" class="u-photo">
+      </a>
+    </div>
+  
+
+  <div class="author__content">
+    <h3 class="author__name p-name" itemprop="name">
+      <a class="u-url" rel="me" href="http://localhost:4000/" itemprop="url">Thomas Gumbricht</a>
+    </h3>
+    
+      <div class="author__bio p-note" itemprop="description">
+        <p>Scientist working part time for Karttur and part time for Stockholm University.</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name" class="p-locality">Stockholm, Sweden</span>
+        </li>
+      
+
+      
+        
+          
+            <li><a href="https://karttur.github.io/proffs/" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fas fa-fw fa-link" aria-hidden="true"></i><span class="label">Portfolio</span></a></li>
+          
+        
+          
+            <li><a href="https://github.com/karttur-v2/" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
+          
+        
+          
+            <li><a href="https://www.linkedin.com/in/thomas-gumbricht-588a2a23" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span class="label">Linkedin</span></a></li>
+          
+        
+          
+            <li><a href="https://scholar.google.com/citations?user=v9-kWvcAAAAJ&hl=en" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-google-scholar" aria-hidden="true"></i><span class="label">Google scholar</span></a></li>
+          
+        
+          
+            <li><a href="https://orcid.org/0000-0002-5125-4487" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-orcid" aria-hidden="true"></i><span class="label">Orcid</span></a></li>
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer me">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+    
+      
+      
+      
+      
+    
+    
+      <nav class="nav__list">
+  
+  <input id="ac-toc" name="accordion-toc" type="checkbox" />
+  <label for="ac-toc">Toggle menu</label>
+  <ul class="nav__items">
+    
+      
+      
+        <li>
+          
+            <span class="nav__sub-title">Jekyll doc system</span>
+          
+
+          
+          <ul>
+            
+              <li><a href="/ruby/">Ruby</a></li>
+            
+              <li><a href="/jekyllpages/">Intro</a></li>
+            
+              <li><a href="/jekyll/jekyllposts/">Jekyll</a></li>
+            
+          </ul>
+          
+        </li>
+      
+    
+  </ul>
+</nav>
+
+    
+  
+  </div>
+
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Jekyll posts">
+    
+    
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">
+            <a href="http://localhost:4000/websetup/jekyll/jekyllposts/" itemprop="url">Jekyll posts
+</a>
+          </h1>
+          
+
+
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+          <aside class="sidebar__right ">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On this page</h4></header>
+              <ul class="toc__menu"><li><a href="#posts---a-quick-tutorial">Posts - a quick tutorial</a></li><li><a href="#kartturs-categorised-posts">Karttur’s categorised posts</a><ul><li><a href="#navigation-link">Navigation link</a></li><li><a href="#posts-of-categery-jekyllposts">Posts of categery jekyllposts</a></li></ul></li></ul>
+            </nav>
+          </aside>
+        
+        <!-- If there is a title in the front matter it is of cat #, thus start those docs at ## level
+-->
+
+<h2 id="posts---a-quick-tutorial">Posts - a quick tutorial</h2>
+
+<ol>
+  <li>Create the <em>post</em> document in the folder <em>_posts</em>, name it logically,</li>
+  <li>set <em>posts</em> primary keys either:
+    <ul>
+      <li>in <span class="file">_config.yml</span>, or</li>
+      <li>as front matter in the <em>posts</em> document itself,</li>
+    </ul>
+  </li>
+  <li>set the <em>title</em> and the creation <em>date</em> in the front matter,</li>
+  <li>(optionally) include an <em>excerpt</em> key for announcing content,</li>
+  <li>add other options in the front matter, including overriding the <span class="file">_config.yml</span> <em>defaults</em>.</li>
+</ol>
+
+<p>For more details read on or visit the <a href="https://jekyllrb.com/docs/posts/">Jekyll document on Posts</a>.</p>
+
+<h2 id="kartturs-categorised-posts">Karttur’s categorised posts</h2>
+
+<p>This document is itself of the scope <a href="../jekyllpages/">pages</a> type. It is the front page (or root) of the posts with <em>categories</em> set to to <em>jekyllposts</em> (but is not itself categorised at all). To end up in the root directory of the posts categorised as <em>jekyllposts</em>, the front matter key <em>permalink</em> is set to <em>/jekyllposts/</em>. The complete front matter of this page thus looks like this (for details on how this defines the layout see the <a href="../jekyllpages/">pages</a> document in this site):</p>
+
+<div class="language-plaintext no-copy highlighter-rouge"><div class="highlight"><pre class="highlight"><code>layout: single
+author_profile: true
+permalink: /jekyllposts/
+title: "Blog on creating and customising jekyll posts"
+toc: false
+sidebar:
+  nav: "jekylldocs"
+</code></pre></div></div>
+
+<p>To list the posts categorised as <em>jekyllposts</em>, the following liquid searches the site and then generates the list of posts seen below - interestingly enough it is not possible to show the liquid syntax - even inside the markers for “text only” the liquid is executed. The text below is the generated html code from the liquid I tried to display:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;ul&gt;
+  
+    &lt;li&gt;
+      &lt;a href="/websetup/jekyll/jekyll_posts04-layouts-figures/"&gt;Posts in Jekyll: 5. figure&lt;/a&gt;
+      Image header with overlay_color
+    &lt;/li&gt;
+  
+    &lt;li&gt;
+      &lt;a href="/websetup/jekyll/jekyll_posts04-csass-extension/"&gt;Posts in Jekyll: sass&lt;/a&gt;
+      sass extention.
+    &lt;/li&gt;
+  
+    &lt;li&gt;
+      &lt;a href="/websetup/jekyll/jekyll_posts04-code-snippets/"&gt;Posts in Jekyll: 5. Code snippets&lt;/a&gt;
+      How to set front matter in Jekyll posts and options for posts layout and content using the theme Minimal mistakes.
+    &lt;/li&gt;
+  
+    &lt;li&gt;
+      &lt;a href="/websetup/jekyll/jekyll_posts04-layouts-splash/"&gt;Posts in Jekyll: 4. splash&lt;/a&gt;
+      The header section of the Splash layout is generated as expected.
+    &lt;/li&gt;
+  
+    &lt;li&gt;
+      &lt;a href="/websetup/jekyll/jekyll_posts03-layouts-intro/"&gt;Posts in Jekyll: 3. layouts&lt;/a&gt;
+      Introduction to layout options for the theme Minimal Mistakes.
+    &lt;/li&gt;
+  
+    &lt;li&gt;
+      &lt;a href="/websetup/jekyll/jekyll_posts02-categories/"&gt;Posts in Jekyll: 2. categories&lt;/a&gt;
+      Front matter options for organising posts in categories, forcing urls and omitting posts.
+    &lt;/li&gt;
+  
+    &lt;li&gt;
+      &lt;a href="/websetup/jekyll/jekyll_posts01-basics/"&gt;Posts in Jekyll: 1. basics&lt;/a&gt;
+      How to set front matter in Jekyll posts and basic options for layout and content using the theme Minimal Mistakes.
+    &lt;/li&gt;
+  
+&lt;/ul&gt;
+</code></pre></div></div>
+
+<p>Instead I took a screen dump and the image below shows the liquid code that generated the above html (figure 1).</p>
+
+<figure style="width: 450px">
+  <img src="/assets/images/jekyll-liquid-site-categories.png" alt="" />
+  <figcaption>Figure 1. Jekyll liquid code that generated the outcome above.</figcaption>
+</figure>
+
+<h3 id="navigation-link">Navigation link</h3>
+
+<p>This page is also linked in the top navigation bar of all pages of the blog. This is achieved by the following lines in <em>navigation.yml</em>:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- title: "Posts"
+  url: /jekyllposts/
+  description: jekyll posts as part of your site
+</code></pre></div></div>
+
+<h3 id="posts-of-categery-jekyllposts">Posts of categery jekyllposts</h3>
+
+<ul>
+  
+    <li>
+      <a href="/websetup/jekyll/jekyll_posts04-layouts-figures/">Posts in Jekyll: 5. figure</a>
+      Image header with overlay_color
+    </li>
+  
+    <li>
+      <a href="/websetup/jekyll/jekyll_posts04-csass-extension/">Posts in Jekyll: sass</a>
+      sass extention.
+    </li>
+  
+    <li>
+      <a href="/websetup/jekyll/jekyll_posts04-code-snippets/">Posts in Jekyll: 5. Code snippets</a>
+      How to set front matter in Jekyll posts and options for posts layout and content using the theme Minimal mistakes.
+    </li>
+  
+    <li>
+      <a href="/websetup/jekyll/jekyll_posts04-layouts-splash/">Posts in Jekyll: 4. splash</a>
+      The header section of the Splash layout is generated as expected.
+    </li>
+  
+    <li>
+      <a href="/websetup/jekyll/jekyll_posts03-layouts-intro/">Posts in Jekyll: 3. layouts</a>
+      Introduction to layout options for the theme Minimal Mistakes.
+    </li>
+  
+    <li>
+      <a href="/websetup/jekyll/jekyll_posts02-categories/">Posts in Jekyll: 2. categories</a>
+      Front matter options for organising posts in categories, forcing urls and omitting posts.
+    </li>
+  
+    <li>
+      <a href="/websetup/jekyll/jekyll_posts01-basics/">Posts in Jekyll: 1. basics</a>
+      How to set front matter in Jekyll posts and basic options for layout and content using the theme Minimal Mistakes.
+    </li>
+  
+</ul>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+
+      </footer>
+
+      
+
+      
+
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+      
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';" role="search">
+    <label class="sr-only" for="search">
+      Enter your search term...
+    </label>
+    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="Enter your search term..." />
+  </form>
+  <div id="results" class="results"></div></div>
+
+      </div>
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+
+    
+      
+        
+          <li><a href="https://github.com/karttur-v2/" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+          <li><a href="https://www.linkedin.com/in/thomas-gumbricht-588a2a23" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> Linkedin</a></li>
+        
+      
+        
+          <li><a href="https://scholar.google.com/citations?user=v9-kWvcAAAAJ&hl=en" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-google-scholar" aria-hidden="true"></i> Google scholar</a></li>
+        
+      
+        
+          <li><a href="https://orcid.org/0000-0002-5125-4487" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-orcid" aria-hidden="true"></i> Orcid</a></li>
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2025 <a href="http://localhost:4000">Karttur</a>. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+<script src="/assets/js/lunr/lunr.min.js"></script>
+<script src="/assets/js/lunr/lunr-store.js"></script>
+<script src="/assets/js/lunr/lunr-en.js"></script>
+
+
+
+
+
+
+  </body>
+</html>
